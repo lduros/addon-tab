@@ -1,11 +1,10 @@
 Recent web UI frameworks give addon developers the opportunity to
-design fantastic pages for their addons. This community module makes
-it easier to create great addon pages such as complex settings pages
-requiring computation and interactivity with a unique user experience
-and design.
+design fantastic pages for their addons. This module makes it easier
+to create great addon pages such as complex settings pages requiring
+computation and interactivity with a unique user experience and
+design.
 
 This module does only a few things:
-
 
     - Like the core addon-page module, it hides the location bar. But
       instead of being limited to a single page in your data/
@@ -23,3 +22,9 @@ This module does only a few things:
 Use it with a great framework such as Bootstrap or jQuery UI and
 create awesome pages!
 
+Limitations:
+
+    - Because it doesn't track each window like the core addon-page,
+      if you right-click on the tab and "Move to new Window", you will
+      not see the special style applied to the tab anymore and you
+      will see the Navigation Toolbar.
