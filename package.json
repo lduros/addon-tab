@@ -2,7 +2,7 @@
   "name": "addon-tab",
   "fullName": "addon-tab",
   "id": "jid1-VwdtN405kSVuTQ",
-  "description": "Opens a tab with a local page, hiding the location/search bars, and allows to set styles directly on the tab element (see example). This is ideal if your addon has a complex UI requiring a complex html page (and using such frameworks as jQuery UI, Bootstrap, etc, ...)"
+  "description": "Opens a tab with a local page, hiding the location/search bars, and allows to set styles directly on the tab element (see example). This is ideal if your addon has a complex UI requiring a complex html page (and using such frameworks as jQuery UI, Bootstrap, etc, ...)",
   "author": "Loic J. Duros",
   "license": "MPL 2.0",
   "version": "0.1"
