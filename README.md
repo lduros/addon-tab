@@ -6,6 +6,7 @@ and design.
 
 This module does only a few things:
 
+
     - Like the core addon-page module, it hides the location bar. But
       instead of being limited to a single page in your data/
       directory, you can create a new tab for any URL (including local
