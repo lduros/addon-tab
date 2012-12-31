@@ -5,6 +5,7 @@ computation and interactivity with a unique user experience and
 design.
 
 A very bare example of an addon-tab:
+
 ![small screenshot](https://raw.github.com/lduros/addon-tab/master/doc/images/addon-tab-screenshot-small.png)
 
 
