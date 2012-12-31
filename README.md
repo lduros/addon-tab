@@ -42,7 +42,6 @@ AddonTab.open({
     'background-image': 'none', // important to overwrite bckg when tab is active.
     'font-weight': 'bold',
     'font-size': '1.1em',
-    'text-decoration': 'italic',
     'color': 'red'
   },
   onReady: function (tab) {
