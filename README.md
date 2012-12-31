@@ -4,9 +4,11 @@ to create great addon pages such as complex settings pages requiring
 computation and interactivity with a unique user experience and
 design.
 
-This module does only a few things:
-
+A very bare example of an addon-tab:
 ![small screenshot](https://raw.github.com/lduros/addon-tab/master/doc/images/addon-tab-screenshot-small.png)
+
+
+This module does only a few things:
 
     - Like the core addon-page module, it hides the navigation bar. But
       instead of being limited to a single page in your data/
