@@ -11,11 +11,11 @@ A very bare example of an addon-tab:
 
 This module does only a few things:
 
-    - Like the core addon-page module, it hides the navigation bar. But
-      instead of being limited to a single page in your data/
-      directory, you can create a new tab for any URL (including local
-      addon pages) with a hidden nagivation toolbar.
-      
+    - Like the core addon-page module, it hides the navigation
+      bar. But instead of being limited to the single data/index.html
+      page, you can create a new tab for any local addon pages with a
+      hidden nagivation toolbar.
+
     - To increase the distinct flavor of your addon, you can
       also add CSS styles to the tab itself of your addon tab. You may
       give it a certain background color, change the aspect of the
