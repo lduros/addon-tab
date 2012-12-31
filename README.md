@@ -46,6 +46,8 @@ AddonTab.open({
   }
 });
 ```
+
+![The resulting addon page](https://raw.github.com/lduros/addon-tab/master/doc/images/addon-tab-screenshot.png)
 Just like the regular tab.open() method, you can add content script
 onReady and with other events. The tabStyle object can hold any
 supported css property/value. After the initial open, your local URI
