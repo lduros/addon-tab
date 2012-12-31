@@ -6,6 +6,8 @@ design.
 
 This module does only a few things:
 
+![small screenshot](https://raw.github.com/lduros/addon-tab/master/doc/images/addon-tab-screenshot-small.png)
+
     - Like the core addon-page module, it hides the navigation bar. But
       instead of being limited to a single page in your data/
       directory, you can create a new tab for any URL (including local
