@@ -6,10 +6,10 @@ design.
 
 This module does only a few things:
 
-    - Like the core addon-page module, it hides the location bar. But
+    - Like the core addon-page module, it hides the navigation bar. But
       instead of being limited to a single page in your data/
       directory, you can create a new tab for any URL (including local
-      addon pages) with a hidden location bar.
+      addon pages) with a hidden nagivation toolbar.
       
     - To increase the distinct flavor of your addon, you can
       also add CSS styles to the tab itself of your addon tab. You may
@@ -18,13 +18,43 @@ This module does only a few things:
       
     - It uses the tabs module, allowing you to inject content scripts
       and communicate with your addon scripts.
+    
+    - It is a modified version of the addon-page, having an object
+      literal instead of a string constant for the URLs.
       
 Use it with a great framework such as Bootstrap or jQuery UI and
 create awesome pages!
 
-Limitations:
+Here is an example of how to open an addon-tab with a gloomy looking tab:
+```javascript
+const AddonTab = require("addon-tab");
+const { data } = require("self");
 
-    - Because it doesn't track each window like the core addon-page,
-      if you right-click on the tab and "Move to new Window", you will
-      not see the special style applied to the tab anymore and you
-      will see the Navigation Toolbar.
+AddonTab.open({
+  url: data.url("dark-side.html"),
+  tabStyle: {
+    'background-color': '#000',
+    'background-image': 'none', // important to overwrite bckg when tab is active.
+    'font-weight': 'bold',
+    'font-size': '1.1em',
+    'text-decoration': 'italic',
+    'color': 'red'
+  },
+  onReady: function (tab) {
+    // do something with the page, add content scripts, etc, ...
+  });
+  }
+});
+```
+Just like the regular tab.open() method, you can add content script
+onReady and with other events. The tabStyle object can hold any
+supported css property/value. After the initial open, your local URI
+has been added to the list of addon tabs.
+
+You can remove a page from the AddonTab list by running:
+```javascript
+const AddonTab = require("addon-tab");
+const { data } = require("self");
+
+AddonTab.removeAddonTab(data.url("dark-side.html"));
+```
